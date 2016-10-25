@@ -137,7 +137,9 @@ class GrupoDetailTableViewController: UITableViewController{
 
     }
     
-
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
 
     /*
     // MARK: - Navigation
