@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0FA4CAB03E4B61ED071DDAC4 /* Pods_EcoLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1293BD25C14B0BE241BEA3 /* Pods_EcoLight.framework */; };
+		9E0F9E701DBF7CDC00AFBC81 /* TutorialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F9E6F1DBF7CDC00AFBC81 /* TutorialTableViewController.swift */; };
+		9E0F9E721DBF857900AFBC81 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F9E711DBF857900AFBC81 /* ImageViewController.swift */; };
 		9E1201BF1D90BB6800ED596D /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1201BE1D90BB6800ED596D /* SwitchTableViewCell.swift */; };
 		9E21F0E11D905FFC0048240C /* LightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E21F0E01D905FFC0048240C /* LightTableViewController.swift */; };
 		9E21F0E61D9060660048240C /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E21F0E51D9060660048240C /* Switch.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		3D9782D06F5D40571FE544B7 /* Pods-EcoLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoLight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoLight/Pods-EcoLight.debug.xcconfig"; sourceTree = "<group>"; };
 		750E3ED17ED1E87E60FEFC22 /* Pods-EcoLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoLight.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcoLight/Pods-EcoLight.release.xcconfig"; sourceTree = "<group>"; };
+		9E0F9E6F1DBF7CDC00AFBC81 /* TutorialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialTableViewController.swift; sourceTree = "<group>"; };
+		9E0F9E711DBF857900AFBC81 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		9E1201BE1D90BB6800ED596D /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		9E21F0E01D905FFC0048240C /* LightTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTableViewController.swift; sourceTree = "<group>"; };
 		9E21F0E51D9060660048240C /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				9E21F0E01D905FFC0048240C /* LightTableViewController.swift */,
 				9E23F3D61D90DCDC009E104B /* GrupoTableViewController.swift */,
 				9E23F3DC1D90EFD5009E104B /* NuevoGrupoTableViewController.swift */,
+				9E0F9E6F1DBF7CDC00AFBC81 /* TutorialTableViewController.swift */,
 			);
 			name = TableViewController;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				9E84A8311D93733C008D15EE /* WifiConfigurationViewController.swift */,
 				9E7E0C8F1D986E0F00941E0A /* PickerViewController.swift */,
 				9E993C341DA8CCA8002A1863 /* EditingViewController.swift */,
+				9E0F9E711DBF857900AFBC81 /* ImageViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				9E21F0E11D905FFC0048240C /* LightTableViewController.swift in Sources */,
 				9E993C351DA8CCA8002A1863 /* EditingViewController.swift in Sources */,
 				9E23F3DB1D90ED9A009E104B /* EditTableViewCell.swift in Sources */,
+				9E0F9E721DBF857900AFBC81 /* ImageViewController.swift in Sources */,
 				9E82F1B51D91CD0700F8EAB2 /* ytcpsocket.c in Sources */,
 				9E23F3D91D90E10A009E104B /* GrupoDetailTableViewController.swift in Sources */,
 				9EF4D6D41D9094B30099EA2C /* NameTableViewCell.swift in Sources */,
@@ -353,6 +360,7 @@
 				9EB412801D8EEEEF00A2E795 /* AppDelegate.swift in Sources */,
 				9E7E0C901D986E0F00941E0A /* PickerViewController.swift in Sources */,
 				9E84A8321D93733C008D15EE /* WifiConfigurationViewController.swift in Sources */,
+				9E0F9E701DBF7CDC00AFBC81 /* TutorialTableViewController.swift in Sources */,
 				9EBBB3191D93814D008B8A7D /* ParserMessage.swift in Sources */,
 				9E21F0EC1D906A220048240C /* LightDetailTableViewController.swift in Sources */,
 			);
