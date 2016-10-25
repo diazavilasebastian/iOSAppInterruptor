@@ -37,6 +37,7 @@
 		9EB412871D8EEEEF00A2E795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB412861D8EEEEF00A2E795 /* Assets.xcassets */; };
 		9EB4128A1D8EEEEF00A2E795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB412881D8EEEEF00A2E795 /* LaunchScreen.storyboard */; };
 		9EBBB3191D93814D008B8A7D /* ParserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBBB3181D93814D008B8A7D /* ParserMessage.swift */; };
+		9EDD8BA31DBFD3550036A34C /* NewValueGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDD8BA21DBFD3550036A34C /* NewValueGroup.swift */; };
 		9EF4D6D41D9094B30099EA2C /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4D6D31D9094B30099EA2C /* NameTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		9EB412891D8EEEEF00A2E795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EB4128B1D8EEEEF00A2E795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EBBB3181D93814D008B8A7D /* ParserMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserMessage.swift; sourceTree = "<group>"; };
+		9EDD8BA21DBFD3550036A34C /* NewValueGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewValueGroup.swift; sourceTree = "<group>"; };
 		9EF4D6D31D9094B30099EA2C /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
 		FB1293BD25C14B0BE241BEA3 /* Pods_EcoLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -163,6 +165,7 @@
 				9E7E0C8F1D986E0F00941E0A /* PickerViewController.swift */,
 				9E993C341DA8CCA8002A1863 /* EditingViewController.swift */,
 				9E0F9E711DBF857900AFBC81 /* ImageViewController.swift */,
+				9EDD8BA21DBFD3550036A34C /* NewValueGroup.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				9E21F0E11D905FFC0048240C /* LightTableViewController.swift in Sources */,
 				9E993C351DA8CCA8002A1863 /* EditingViewController.swift in Sources */,
 				9E23F3DB1D90ED9A009E104B /* EditTableViewCell.swift in Sources */,
+				9EDD8BA31DBFD3550036A34C /* NewValueGroup.swift in Sources */,
 				9E0F9E721DBF857900AFBC81 /* ImageViewController.swift in Sources */,
 				9E82F1B51D91CD0700F8EAB2 /* ytcpsocket.c in Sources */,
 				9E23F3D91D90E10A009E104B /* GrupoDetailTableViewController.swift in Sources */,

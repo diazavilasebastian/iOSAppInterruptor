@@ -41,7 +41,7 @@ extension SliderTableViewCell : UITextFieldDelegate{
         if atributo != "Luz"{
             self.valor.text = String(Int(slider.value))
         }
-        self.Delegate?.getValuesFinish("Switch", field:atributo! , value: valor2)
+        self.Delegate?.getValuesFinish("Switch o grupo", field:atributo! , value: valor2)
     }
     
 }
