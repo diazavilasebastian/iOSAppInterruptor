@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SVProgressHUD
 
 class GrupoTableViewController: UITableViewController {
     
@@ -97,10 +98,26 @@ class GrupoTableViewController: UITableViewController {
         let deleteAction = UITableViewRowAction(style: .Default, title: "Eliminar") { (ation:UITableViewRowAction!,indexPath:NSIndexPath!) -> Void  in
             
             let realm = try! Realm()
+            let grupoNinguno : Grupo = realm.objects(Grupo.self).filter("nombre == \"Ninguno\"").first!
+            
+            let interruptores = realm.objects(Switch.self).filter("grupo == \"\(self.grupos[indexPath.row].nombre)\"")
+            
+            for interruptor in interruptores{
+                interruptor.cambiarParametros(grupoNinguno)
+                HTTPRequest.UpdateSwitch(interruptor) { (exito, mensaje) in
+                    if(exito){
+                        print("el interruptor guardo los datos con exito")
+                    }else{
+                        SVProgressHUD.showErrorWithStatus("ERROR al guardar, Verifique conexion a internet")
+                    }
+                }
+            }
             
             try! realm.write {
                 realm.delete(self.grupos[indexPath.row])
             }
+
+            
             self.tableView.reloadData()
             
         }
