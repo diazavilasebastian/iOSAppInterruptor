@@ -83,13 +83,74 @@ class NuevoGrupoTableViewController: UITableViewController,DataDelegate {
     }
     
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        switch secciones[indexPath.section].tituloSeccion[indexPath.row] {
+            
+        case "Luz":
+            let viewController = storyboard?.instantiateViewControllerWithIdentifier("valueGroup") as! NewValueGroup
+            viewController.atributo = secciones[indexPath.section].tituloSeccion[indexPath.row]
+            viewController.grupo = grupoTmp
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
+        case "Distancia":
+            let viewController = storyboard?.instantiateViewControllerWithIdentifier("valueGroup") as! NewValueGroup
+            viewController.atributo = secciones[indexPath.section].tituloSeccion[indexPath.row]
+            viewController.grupo = grupoTmp
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
+        case "Retardo":
+            let viewController = storyboard?.instantiateViewControllerWithIdentifier("valueGroup") as! NewValueGroup
+            viewController.atributo = secciones[indexPath.section].tituloSeccion[indexPath.row]
+            viewController.grupo = grupoTmp
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
+        default:
+            break
+            
+            
+            
+        }
+        
+        
+        
+        
+        //let viewController = storyboard?.instantiateViewControllerWithIdentifier("pickerView")
+        //self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
+    
+    
+    
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let atributo: String = secciones[indexPath.section].tituloSeccion[indexPath.row]
         
         
         switch atributo {
+        case "Luz":
+            let cell = tableView.dequeueReusableCellWithIdentifier("nameCell", forIndexPath: indexPath) as! NameTableViewCell
             
-        case "Nombre","Luz","Distancia","Retardo":
+            cell.Titulo?.text = secciones[indexPath.section].tituloSeccion[indexPath.row]
+            cell.Name?.text = ""
+            return cell
+            
+            
+        case "Distancia":
+            let cell = tableView.dequeueReusableCellWithIdentifier("nameCell", forIndexPath: indexPath) as! NameTableViewCell
+            
+            cell.Titulo?.text = secciones[indexPath.section].tituloSeccion[indexPath.row]
+            cell.Name?.text = String(grupoTmp.distancia)+" cm"
+            return cell
+            
+        case "Retardo":
+            let cell = tableView.dequeueReusableCellWithIdentifier("nameCell", forIndexPath: indexPath) as! NameTableViewCell
+            
+            cell.Titulo?.text = secciones[indexPath.section].tituloSeccion[indexPath.row]
+            cell.Name?.text = String(grupoTmp.tiempoEncendida)+" seg"
+            return cell
+            
+        case "Nombre","Retardo":
             let cell = tableView.dequeueReusableCellWithIdentifier("editcell", forIndexPath: indexPath) as! EditTableViewCell
             
             cell.Titulo?.text = secciones[indexPath.section].tituloSeccion[indexPath.row]
@@ -185,6 +246,11 @@ class NuevoGrupoTableViewController: UITableViewController,DataDelegate {
         }
     }
 
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData()
+        
+    }
 }
 
 

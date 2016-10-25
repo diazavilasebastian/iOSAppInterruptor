@@ -61,6 +61,22 @@ class Grupo : Object{
     
     }
     
+    func cambiarParametro(atributo: String, valor:String){
+        switch atributo {
+        case "Distancia":
+            self.distancia = Int(valor)!
+            
+        case "Luz":
+           self.luz = Int(valor)!
+    
+        default:
+            self.tiempoEncendida = Int(valor)!
+        }
+        
+    
+    
+    }
+    
     
 
 }
