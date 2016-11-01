@@ -19,7 +19,7 @@ class LightTableViewController: UITableViewController {
         super.viewDidLoad()
         let realm = try! Realm()
         let interruptor: Switch = Switch()
-        interruptor.id = 2
+        interruptor.id = 1
         
 
 

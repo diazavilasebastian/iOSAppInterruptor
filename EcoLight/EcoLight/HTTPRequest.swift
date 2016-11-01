@@ -16,7 +16,7 @@ import RealmSwift
 class HTTPRequest {
 
     class func UpdateSwitch(interruptor : Switch , completitionHandler:(exito:Bool,mensaje:String)->Void){
-        Alamofire.request(.GET, "http://sdiaz.nosze.co/prueba1/phone/Upload.php", parameters: ["id": interruptor.id,"nombre": interruptor.nombre,"grupo": interruptor.grupo,"estado": interruptor.estado,"luz": interruptor.luz,"distancia": interruptor.distancia,"retardo": interruptor.tiempoEncendida,"encendido": interruptor.luzOn]).responseString { response in
+        Alamofire.request(.GET, "http://sdiaz.nosze.co/prueba1/phone/Upload.php", parameters: ["id": interruptor.id,"nombre": interruptor.nombre,"grupo": interruptor.grupo,"estado": interruptor.estado,"luz": interruptor.luz,"distancia": interruptor.distancia,"retardo": interruptor.tiempoEncendida*1000,"encendido": interruptor.luzOn]).responseString { response in
             if let respuesta: String = response.result.value {
                 print(respuesta)
                 let respuesta: String = response.result.value!
