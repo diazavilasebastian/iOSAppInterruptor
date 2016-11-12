@@ -67,12 +67,17 @@ class LightTableViewController: UITableViewController {
         cell.Nombre.text = interruptores[indexPath.row].nombre
         cell.Grupo.text = interruptores[indexPath.row].grupo
         
-        
-        if(interruptores[indexPath.row].luzOn){
-            cell.Imagen.image = UIImage(named:"light_on")
+        if(interruptores[indexPath.row].estado == 1){
+            if(interruptores[indexPath.row].luzOn){
+                cell.Imagen.image = UIImage(named:"light_on")
+            }else{
+                cell.Imagen.image = UIImage(named:"light_off")
+            }
         }else{
-            cell.Imagen.image = UIImage(named:"light_off")
+            cell.Imagen.image = UIImage(named:"light_auto")
+        
         }
+        
         
         
 

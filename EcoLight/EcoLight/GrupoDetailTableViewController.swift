@@ -90,7 +90,7 @@ class GrupoDetailTableViewController: UITableViewController{
             case "Nombre":
                 cell.Name?.text = grupo.nombre
             case "Luz":
-                cell.Name?.text = String(grupo.luz)
+                cell.Name?.text = ""
             case "Retardo":
                 cell.Name?.text = String(grupo.tiempoEncendida)
             default:
