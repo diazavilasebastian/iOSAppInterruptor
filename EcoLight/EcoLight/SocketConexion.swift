@@ -43,7 +43,7 @@ class SocketConexion {
                 print(errmsg+"2")
             }
         } else {
-            SVProgressHUD.showErrorWithStatus("No se pudo conectar Verifique conexion a EcoLight")
+            SVProgressHUD.showErrorWithStatus("No se pudo conectar Verifique conexión a EcoLight")
             print(errmsg+"1")
         }
         

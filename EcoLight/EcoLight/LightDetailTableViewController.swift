@@ -29,7 +29,10 @@ class LightDetailTableViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         secciones = [seccion(seccionNombre:"Personal",tituloSeccion: ["Nombre","Grupo"]),
                      seccion(seccionNombre: "Manual", tituloSeccion: ["Activo","Encender"]),
-                     seccion(seccionNombre: "Automatico", tituloSeccion: ["Movimiento","Cercania","Luz","Retardo","Distancia"])]
+                     seccion(seccionNombre: "Automático", tituloSeccion: ["Movimiento","Cercanía","Luz","Retardo","Distancia"])]
+        
+        
+
         
     }
 
@@ -176,9 +179,9 @@ class LightDetailTableViewController: UITableViewController {
         if parent == nil {
             HTTPRequest.UpdateSwitch(self.interruptor) { (exito, mensaje) in
                 if(exito){
-                    print("el interruptor guardo los datos con exito")
+                    print("el interruptor guardo los datos con éxito")
                 }else{
-                    SVProgressHUD.showErrorWithStatus("ERROR al guardar, Verifique conexion a internet")
+                    SVProgressHUD.showErrorWithStatus("ERROR al guardar, Verifique conexión a internet")
                 }
             }
         }

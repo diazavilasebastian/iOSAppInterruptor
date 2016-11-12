@@ -29,9 +29,6 @@ class HTTPRequest {
             
             }
             
-            
-
-            
         }
     
     }
@@ -87,11 +84,7 @@ class HTTPRequest {
                 }
             })
         }
-        
-        
-        
-        
-        
+
     }
 
 

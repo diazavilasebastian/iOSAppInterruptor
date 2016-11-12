@@ -25,7 +25,7 @@ class TutorialTableViewController: UITableViewController {
                      seccion(nombreTutorial: "¿Que es modo Manual?",numero: 2),
                      seccion(nombreTutorial: "¿Que es modo distancia?",numero: 3),
                      seccion(nombreTutorial: "¿Que es modo movimiento?",numero: 4),
-                     seccion(nombreTutorial: "Recomendacion de configuración",numero: 5)]
+                     seccion(nombreTutorial: "Recomendación de configuración",numero: 5)]
         tableView.tableFooterView = UIView()
         
     }

@@ -18,13 +18,37 @@ class LightTableViewController: UITableViewController {
         
         super.viewDidLoad()
         let realm = try! Realm()
-        let interruptor: Switch = Switch()
-        interruptor.id = 1
+        let interruptor1 = Switch()
+        interruptor1.id = 1
+        let interruptor2 = Switch()
+        interruptor2.id = 2
+        let interruptor3 = Switch()
+        interruptor3.id = 3
+        let interruptor4 = Switch()
+        interruptor4.id = 4
+        let interruptor5 = Switch()
+        interruptor5.id = 5
+        let interruptor6 = Switch()
+        interruptor6.id = 6
+        let interruptor7 = Switch()
+        interruptor7.id = 7
+        let interruptor8 = Switch()
+        interruptor8.id = 8
+        
+    
         
 
 
         try! realm.write {
-            realm.add(interruptor, update: true)
+            realm.add(interruptor1, update: true)
+            realm.add(interruptor2, update: true)
+            realm.add(interruptor3, update: true)
+            realm.add(interruptor4, update: true)
+            realm.add(interruptor5, update: true)
+            realm.add(interruptor6, update: true)
+            realm.add(interruptor7, update: true)
+            realm.add(interruptor8, update: true)
+            
   
         }
         

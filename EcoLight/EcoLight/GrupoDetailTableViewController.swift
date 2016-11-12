@@ -26,7 +26,7 @@ class GrupoDetailTableViewController: UITableViewController{
         
         secciones = [seccion(seccionNombre:"Personal",tituloSeccion: ["Nombre"]),
                      seccion(seccionNombre: "Manual", tituloSeccion: ["Activo"]),
-                     seccion(seccionNombre: "Automatico", tituloSeccion: ["Movimiento","Cercania","Luz","Retardo","Distancia"])]
+                     seccion(seccionNombre: "Automático", tituloSeccion: ["Movimiento","Cercanía","Luz","Retardo","Distancia"])]
 
         
         tableView.tableFooterView = UIView()
