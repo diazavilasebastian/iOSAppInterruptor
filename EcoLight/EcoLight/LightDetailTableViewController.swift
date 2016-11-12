@@ -134,7 +134,7 @@ class LightDetailTableViewController: UITableViewController {
 
             return cell
             
-        case "Activo","Cercania","Movimiento","Encender":
+        case "Activo","Cercanía","Movimiento","Encender":
             let cell = tableView.dequeueReusableCellWithIdentifier("nameCell", forIndexPath: indexPath) as! NameTableViewCell
             cell.Titulo?.text = secciones[indexPath.section].tituloSeccion[indexPath.row]
             switch secciones[indexPath.section].tituloSeccion[indexPath.row] {
@@ -150,7 +150,7 @@ class LightDetailTableViewController: UITableViewController {
                 }else{
                     cell.Name?.text = "Inactivo"
                 }
-            case "Cercania":
+            case "Cercanía":
                 if(interruptor.estado==3){
                     cell.Name?.text = "Activo"
                 }else{
@@ -179,7 +179,7 @@ class LightDetailTableViewController: UITableViewController {
         if parent == nil {
             HTTPRequest.UpdateSwitch(self.interruptor) { (exito, mensaje) in
                 if(exito){
-                    print("el interruptor guardo los datos con éxito")
+                    print("el interruptor guardo los datos con exito")
                 }else{
                     SVProgressHUD.showErrorWithStatus("ERROR al guardar, Verifique conexión a internet")
                 }

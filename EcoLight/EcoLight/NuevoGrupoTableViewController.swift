@@ -157,7 +157,7 @@ class NuevoGrupoTableViewController: UITableViewController,DataDelegate {
             cell.Delegate = self
             return cell
             
-        case "Activo","Cercania","Movimiento":
+        case "Activo","Cercanía","Movimiento":
             let cell = tableView.dequeueReusableCellWithIdentifier("switchCell", forIndexPath: indexPath) as! SwitchTableViewCell
             cell.Titulo?.text = secciones[indexPath.section].tituloSeccion[indexPath.row]
             

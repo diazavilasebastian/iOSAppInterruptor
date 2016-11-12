@@ -98,7 +98,7 @@ class GrupoDetailTableViewController: UITableViewController{
             }
             return cell
             
-        case "Activo","Cercania","Movimiento","Encender":
+        case "Activo","Cercanía","Movimiento","Encender":
             let cell = tableView.dequeueReusableCellWithIdentifier("nameCell", forIndexPath: indexPath) as! NameTableViewCell
             cell.Titulo?.text = secciones[indexPath.section].tituloSeccion[indexPath.row]
             switch secciones[indexPath.section].tituloSeccion[indexPath.row] {

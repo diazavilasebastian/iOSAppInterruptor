@@ -103,7 +103,7 @@ class Switch : Object {
             try! realm.write {
                 self.estado = 2
             }
-        case"Cercania":
+        case"Cercanía":
             try! realm.write {
                 self.estado = 3
             }

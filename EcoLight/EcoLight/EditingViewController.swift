@@ -88,7 +88,7 @@ class EditingViewController: UIViewController, UITableViewDelegate, UITableViewD
                 return cell
             
             
-            case "Activo","Cercania","Encender","Movimiento":
+            case "Activo","Cercanía","Encender","Movimiento":
                 let cell = self.tableView.dequeueReusableCellWithIdentifier("switchCell", forIndexPath: indexPath) as! SwitchTableViewCell
                 cell.Titulo!.text = atributo
                 switch  atributo{
@@ -104,7 +104,7 @@ class EditingViewController: UIViewController, UITableViewDelegate, UITableViewD
                     }else{
                         cell.SwitchButton?.on = false
                     }
-                case "Cercania":
+                case "Cercanía":
                     if(interruptor.estado==3){
                         cell.SwitchButton?.on = true
                     }else{
