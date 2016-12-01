@@ -44,7 +44,7 @@ class EditingViewController: UIViewController, UITableViewDelegate, UITableViewD
                 let cell = self.tableView.dequeueReusableCellWithIdentifier("sliderCell", forIndexPath: indexPath) as! SliderTableViewCell
                 cell.Titulo!.text = atributo
             
-                cell.valor!.text = String(interruptor.tiempoEncendida)
+                cell.valor!.text = String(interruptor.distancia)
                 cell.slider.minimumValue = 0
                 cell.slider.maximumValue = 300
                 cell.slider.value = Float(interruptor.distancia)

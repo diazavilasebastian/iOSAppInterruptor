@@ -31,7 +31,7 @@ class ParserMessage {
         }
         interruptor.distancia = Int(fullNameArr[5])!
         interruptor.luz = Int(fullNameArr[5])!
-        interruptor.tiempoEncendida = Int(fullNameArr[7])!
+        interruptor.tiempoEncendida = Int(fullNameArr[7])!/1000
         
         return interruptor
     
